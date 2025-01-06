@@ -1,4 +1,5 @@
 # portfolio
+
 Building a portfolio website is an essential tool for showcasing your skills, projects, and professional experiences to potential employers, clients, or collaborators. This documentation outlines the key features and components that your portfolio website should include to maximize its effectiveness.
 
 ### 1. Homepage
