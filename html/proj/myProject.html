@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body and General Layout */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      /* Header Styles */
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        color: #0056b3;
+      }
+
+      /* Project Details Section */
+      .project-details {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Description Section */
+      .description p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        color: #666;
+      }
+
+      /* Technologies Section */
+      .technologies ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .technologies li {
+        display: inline-block;
+        background-color: #e0e0e0;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 20px;
+      }
+
+      /* Project Links */
+      .project-links a {
+        display: inline-block;
+        margin: 10px 15px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #0056b3;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .project-links a:hover {
+        background-color: #004494;
+      }
+
+      /* Image Slider */
+      .image-slider {
+        margin-top: 20px;
+      }
+
+      .image-slider .slider {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+      }
+
+      .image-slider img {
+        max-width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      /* YouTube Video Section */
+      .youtube-video {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .youtube-video iframe {
+        border-radius: 8px;
+      }
+
+      /* Back to Portfolio Link */
+      .back-to-portfolio {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .back-to-portfolio .back-link {
+        text-decoration: none;
+        color: #0056b3;
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+
+      .back-to-portfolio .back-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      // If the video URL is provided, replace the iframe's src attribute with the video URL.
+      const videoUrl = "https://www.youtube.com/embed/your-video-id"; // Change this dynamically as per your need
+
+      if (videoUrl) {
+        document.getElementById("youtube-video").src = videoUrl;
+      } else {
+        // Hide the YouTube section if no video URL
+        document.querySelector(".youtube-video").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Project Title</h1>
+    </header>
+
+    <section class="project-details">
+      <div class="description">
+        <h2>Description</h2>
+        <p>
+          This is a brief description of the project, what it does, its purpose,
+          and any relevant information.
+        </p>
+      </div>
+
+      <div class="technologies">
+        <h3>Technologies Used</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <!-- Add more technologies as needed -->
+        </ul>
+      </div>
+
+      <div class="project-links">
+        <a
+          href="https://github.com/your-repo"
+          target="_blank"
+          class="github-link"
+          >GitHub Repo</a
+        >
+        <a
+          href="https://your-live-project-url.com"
+          target="_blank"
+          class="live-url"
+          >Live Project</a
+        >
+      </div>
+
+      <div class="image-slider">
+        <h3>Project Images</h3>
+        <div class="slider">
+          <!-- Add your images here -->
+          <img src="../../images/Keshav Soni photo.jpg" alt="Screenshot 1" />
+          <img src="../../images/photo.png" alt="Screenshot 2" />
+          <img src="../../images/photo.png" alt="Screenshot 3" />
+          <!-- Images can be dynamically added or hidden -->
+        </div>
+      </div>
+
+      <!-- YouTube video (only shown if URL exists) -->
+      <div class="youtube-video">
+        <!-- Include video only if a URL is provided -->
+        <iframe
+          id="youtube-video"
+          width="560"
+          height="315"
+          src=""
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="back-to-portfolio">
+        <a href="/portfolio" class="back-link">Back to Portfolio</a>
+      </div>
+    </section>
+  </body>
+</html>
